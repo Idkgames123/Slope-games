@@ -1,0 +1,1 @@
+chrome-extension://hoaepbdbkbncfnmplpeecofbnophahah/js/zendrop-aliexpress-importer.js

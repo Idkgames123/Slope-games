@@ -1,0 +1,48 @@
+.modal {
+  :global {
+    .ant-modal-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.88);
+      line-height: 28px;
+      text-align: left;
+      font-style: normal;
+      text-transform: none;
+    }
+  }
+}
+
+.container {
+}
+
+.alert {
+  margin-top: 16px;
+  :global {
+    .ant-alert-message {
+      color: #2189e5;
+    }
+  }
+}
+
+.headersTitle {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 24px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  margin-bottom: 24px;
+}
+
+.multipleChoice {
+  margin-bottom: 24px;
+  .checkboxs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    flex-wrap: wrap;
+  }
+}

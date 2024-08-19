@@ -1,0 +1,176 @@
+// @font-face {
+//   font-family: "Helvetica";
+//   src: url("https://img.dsers.com/font/UB-Helvetica.ttf");
+// }
+
+// @font-face {
+//   font-family: "OpenSans-Regular";
+//   src: url("https://img.dsers.com/font/OpenSans-Regular.ttf");
+// }
+
+// @font-face {
+//   font-family: "OpenSans-Bold";
+//   src: url("https://img.dsers.com/font/OpenSans-Bold.ttf");
+// }
+
+// @font-face {
+//   font-family: "OpenSans-SemiBold";
+//   src: url("https://img.dsers.com/font/OpenSans-SemiBold.ttf");
+// }
+
+// @font-face {
+//   font-family: "HelveticaNeue-Bold";
+//   src: url("https://img.dsers.com/font/HelveticaNeue-Bold.otf");
+// }
+
+// @font-face {
+//   font-family: "psl";
+//   src: url("https://img.dsers.com/font/PSL002SP.ttf");
+// }
+
+// @font-face {
+//   font-family: "Arial-BoldMT";
+//   src: url("https://img.dsers.com/font/Arial-BoldMT.otf");
+// }
+
+// @font-face {
+//   font-family: "Rubik-BoldItalic";
+//   src: url("https://img.dsers.com/font/Rubik-BoldItalic.ttf");
+// }
+
+// @font-face {
+//   font-family: "Rubik-Regular";
+//   src: url("https://img.dsers.com/font/Rubik-Regular.ttf");
+// }
+
+// @font-face {
+//   font-family: "Rubik-Bold";
+//   src: url("https://img.dsers.com/font/Rubik-Bold.ttf");
+// }
+
+// @font-face {
+//   font-family: "Ubuntu-Bold";
+//   src: url("https://img.dsers.com/font/Ubuntu-Bold.ttf");
+// }
+
+.import_product_button {
+  width: 100%;
+  // border: 1px solid salmon;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  position: absolute;
+  z-index: 2;
+  font-family: OpenSans-Bold, OpenSans;
+
+  .header {
+    width: 100%;
+    height: 21px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    color: #ffffff;
+
+    // box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.08),
+    //   0px 3px 14px 2px rgba(0, 0, 0, 0.04), 0px 8px 10px 1px rgba(0, 0, 0, 0.06);
+    // border-radius: 4px;
+
+    .icon {
+      position: absolute;
+      left: 10px;
+      width: 15px;
+      height: 15px;
+      g {
+        fill: antiquewhite;
+      }
+    }
+
+    .title {
+      flex: 1;
+      text-align: center;
+    }
+
+    .price {
+      min-width: 45px;
+      height: 21px;
+
+      position: absolute;
+      right: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #11bc57;
+      border-top-right-radius: 8px;
+      border-left: 1px solid #00b050;
+    }
+  }
+
+  .succeed {
+    background: rgb(42, 204, 111);
+  }
+
+  .error {
+    background: rgb(251, 91, 40);
+  }
+
+  .button {
+    display: none;
+    width: 98%;
+    height: 32px;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.08),
+      0px 3px 14px 2px rgba(0, 0, 0, 0.04), 0px 8px 10px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    margin-top: 6px;
+
+    font-size: 12px;
+    font-family: OpenSans-Bold, OpenSans;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 17px;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+
+  .checkbox {
+    position: absolute;
+    top: 34px;
+    left: 11px;
+    z-index: 99999999;
+    input {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.aeListBatchBtnBox {
+  width: 200px;
+  height: 36px;
+  background: #ff8f00;
+  border-radius: 8px 8px 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > div {
+    margin-right: 15px;
+  }
+  button {
+    background: #ff8f00;
+    color: #ffffff;
+  }
+}

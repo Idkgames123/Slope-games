@@ -1,0 +1,35 @@
+.box {
+  width: 400px;
+  .header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      width: 69px;
+      height: 24px;
+      margin: 7px 4px;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .closeIcon {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+  .content {
+    padding: 8px 16px 16px;
+    & > a {
+      display: block;
+      padding-top: 8px;
+      text-align: center;
+      color: #3d5afe;
+      &:hover {
+        color: #3d5afe;
+      }
+    }
+  }
+}

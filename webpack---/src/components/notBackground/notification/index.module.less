@@ -1,0 +1,56 @@
+.notifyContainer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+
+  min-height: 244px;
+  width: 400px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.08),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.04), 0px 4px 5px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+
+  .notifyContent {
+    .img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 28px;
+
+      .loading {
+        animation: rotate 1s linear infinite;
+      }
+    }
+
+    .title {
+      font-size: 16px;
+      font-family: OpenSans-Bold, OpenSans;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.88);
+      line-height: 22px;
+      text-align: center;
+    }
+
+    .subTitle {
+      font-size: 16px;
+      font-family: OpenSans-Bold, OpenSans;
+      font-weight: bold;
+      color: #479e25;
+      margin-top: 6px;
+      line-height: 22px;
+      text-decoration: underline;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}

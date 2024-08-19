@@ -1,0 +1,72 @@
+.customCheckbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* 隐藏原始复选框 */
+.customCheckbox input {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* 自定义复选框的样式 */
+.customCheckbox .checkmark {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: #fff; /* 背景色保持白色以保持较好的对比 */
+  border: 1px solid #d9d9d9; /* 默认边框颜色为浅灰色 */
+  display: inline-block;
+  border-radius: 4px; /* 圆角 */
+  transition: background-color 0.3s, border-color 0.3s; /* 添加过渡效果 */
+}
+
+/* 当复选框被选中或不确定状态时的样式 */
+.customCheckbox input:checked + .checkmark,
+.customCheckbox input:indeterminate + .checkmark {
+  background-color: #ffc107; /* 金色背景 */
+  border-color: #ffc107; /* 金色边框 */
+}
+
+/* 添加对号 */
+.customCheckbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.customCheckbox input:checked + .checkmark:after {
+  display: block;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: translate(-50%, -50%) rotate(45deg); /* Combine translations and rotations */
+}
+
+/* 不确定状态下的方块 */
+.customCheckbox input:indeterminate + .checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Perfectly center the square */
+  width: 10px;
+  height: 5px;
+  background: white; /* 使用白色方块以增加对比度 */
+}
+
+/* 处理禁用状态 */
+.customCheckbox input:disabled + .checkmark {
+  background-color: #e0e0e0; /* 灰色背景表示禁用 */
+  border-color: #bdbdbd; /* 灰色边框 */
+  cursor: not-allowed; /* 鼠标禁用状态指示 */
+}
+
+.customCheckbox input:disabled + .checkmark:after {
+  background: #bdbdbd; /* 灰色对号或方块表示禁用 */
+}
